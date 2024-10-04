@@ -1,0 +1,206 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar */
+nav {
+  background-color: #007bff;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Ensures consistent card size */
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+/* Product Card */
+.product-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px; /* Ensures all cards are the same width */
+  height: 420px; /* Ensures consistent height */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px; /* Ensures the image height is the same for all cards */
+  object-fit: cover; /* Crops the image to fit the card size */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 1em;
+  color: #007bff;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.product-card button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1em;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Hover Effect */
+.product-card:hover {
+  transform: translateY(-10px); /* Moves the card upwards on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increases shadow on hover */
+}
+
+/* Product Details Page */
+.product-details {
+  padding: 30px;
+  background-color: white;
+  max-width: 800px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-details img {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.product-details h2 {
+  margin-bottom: 20px;
+}
+
+.product-details select {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.product-details button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-details button:hover {
+  background-color: #218838;
+}
+
+/* About Page */
+.about-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-page h1, .about-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.about-page p, .about-page ul {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.about-page ul {
+  list-style: disc inside;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .cart-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cart-item img {
+    margin-bottom: 10px;
+  }
+}
