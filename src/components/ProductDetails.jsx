@@ -32,7 +32,7 @@ const ProductDetails = () => {
           <option value="S">Small</option>
           <option value="M">Medium</option>
           <option value="L">Large</option>
-        </select>
+        </select> 
         <button onClick={addToCart}>Add to Cart</button>
       </div>
     ) : (
