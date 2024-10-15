@@ -49,9 +49,9 @@ const Contact = () => {
 
       <div className="contact-info-section">
         <h3>Get in Touch</h3>
-        <p>Email: contact@myshop.com</p>
-        <p>Phone: +91 98765 43210</p>
-        <p>Address: 123, Business Street, City, India</p>
+        <p>Email: deeprathod788@gmail.com</p>
+        <p>Phone: +91 9737468847</p>
+        <p>Address: Amreli, Gujarat, India</p>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ const About = () => {
       <section className="about-intro">
         <h1>About Us</h1>
         <p>
-          Welcome to MyShop, a leading e-commerce platform where you can find a wide variety of products, from fashion to electronics. Our goal is to deliver the best shopping experience to our customers, offering top-notch products and excellent customer service.
+          Welcome to Jay Bhavni, a leading e-commerce platform where you can find a wide variety of products, from fashion to electronics. Our goal is to deliver the best shopping experience to our customers, offering top-notch products and excellent customer service.
         </p>
       </section>
 
@@ -16,7 +16,7 @@ const About = () => {
       <section className="about-mission">
         <h2>Our Mission</h2>
         <p>
-          At MyShop, we are committed to creating a user-friendly platform that provides seamless and enjoyable shopping experiences. We aim to connect millions of shoppers with quality products at competitive prices.
+          At Jay Bhavni, we are committed to creating a user-friendly platform that provides seamless and enjoyable shopping experiences. We aim to connect millions of shoppers with quality products at competitive prices.
         </p>
       </section>
 
@@ -38,6 +38,7 @@ const About = () => {
         </div>
       </section>
     </div>
+    
   );
 };
 

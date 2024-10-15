@@ -1,4 +1,4 @@
-/* Navbar.css */
+Navbar.css
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -88,4 +88,148 @@
       display: block;
     }
   }
-  
+  /* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Space between the links */
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .nav-links a:hover {
+  text-decoration: underline;
+}
+
+.badge {
+  background-color: #ff4757; /* Red badge for notifications */
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 14px;
+  margin-left: 5px; /* Space between text and badge */
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.logo i {
+  margin-right: 8px; /* Space between icon and text */
+  color: #ff6347; /* Change the color of the icon */
+  font-size: 1.5rem; /* Adjust the icon size */
+}
+
+.navbar {
+  background-color: #333; /* Change this to your desired navbar color */
+  padding: 10px; /* Add some padding */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between logo and menu */
+  align-items: center; /* Center items vertically */
+}
+
+.nav-links {
+  list-style: none; /* Remove default list styles */
+  display: flex; /* Display links in a row */
+}
+
+.nav-links li {
+  margin: 0 15px; /* Space between links */
+}
+
+.nav-links a {
+  color: white; /* Change link color */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Navbar.css */
+.navbar {
+  background-color: #333; /* Change this to your desired navbar color */
+  padding: 10px 20px; /* Add some padding */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between logo and menu */
+  align-items: center; /* Center items vertically */
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.company-logo {
+  width: 40px; /* Adjust the logo size */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.nav-links {
+  list-style: none; /* Remove default list styles */
+  display: flex; /* Display links in a row */
+}
+
+.nav-links li {
+  margin: 0 15px; /* Space between links */
+}
+
+.nav-links a {
+  color: white; /* Change link color */
+  text-decoration: none; /* Remove underline */
+  position: relative; /* For badge positioning */
+}
+
+.badge {
+  background-color: red; /* Badge background color */
+  color: white; /* Badge text color */
+  border-radius: 50%; /* Circular badge */
+  padding: 2px 6px; /* Badge padding */
+  position: absolute; /* Position it relative to the link */
+  top: -10px; /* Adjust vertical position */
+  right: -10px; /* Adjust horizontal position */
+}
+
+.menu-icon {
+  cursor: pointer; /* Change cursor to pointer */
+  color: white; /* Change color for menu icon */
+}
+
+.nav-links.open {
+  display: block; /* Display links when menu is open */
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide links by default in mobile view */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute; /* Absolute positioning for dropdown */
+    background-color: #333; /* Background color for dropdown */
+    top: 60px; /* Position below the navbar */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+  }
+
+  .nav-links.open {
+    display: flex; /* Show links when open */
+  }
+
+  .menu-icon {
+    display: block; /* Show menu icon */
+  }
+}

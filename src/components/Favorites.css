@@ -1,0 +1,37 @@
+/* Favorites.css */
+.favorites-container {
+    padding: 20px;
+  }
+  
+  .favorites-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+  }
+  
+  .favorite-item {
+    border: 1px solid #ccc; /* Add border to favorite items */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px; /* Space between items */
+    padding: 10px; /* Inner spacing */
+    width: 200px; /* Set a fixed width */
+    text-align: center; /* Center the content */
+  }
+  
+  .favorite-item img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .remove-favorite-btn {
+    background-color: red; /* Red background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding */
+    cursor: pointer; /* Pointer cursor */
+  }
+  
+  .remove-favorite-btn:hover {
+    background-color: darkred; /* Darker red on hover */
+  }
+  
